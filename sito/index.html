@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Generatore Squadra di Calcio</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>FAKER.JS VELIQI</h1>
+        </div>
+        <div class="si">
+            <select id="league" class="si1">
+                <option value="SELEZIONA LEGA">SELEZIONA LEGA</option>
+                <option value="SERIE A">Serie A</option>
+                <option value="PREMIER LEAGUE">Premier League</option>
+                <option value="LIGUE 1">Ligue 1</option>
+                <option value="LALIGA">La Liga</option>
+            </select>
+            <select id="team" disabled class="si2">
+            </select>
+
+            <button id="generate">Genera</button>
+        </div>
+
+        <div id="players-container" class="grid-container"></div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+        <script src="js.js"></script>
+    </body>
+    </html>
